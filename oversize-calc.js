@@ -27,50 +27,14 @@ function createImage(objImage) {
 	let divman = document.createElement('div');
 	let divResultOversize = document.getElementById('result-oversize-calc');
 	divman.className = 'result-div-ragdoll';
-	//Изображение мужское оверсайз
+	//Изображение оверсайз
 	let imgOversize = document.createElement("img");
 	imgOversize.src = objImage.oversize_link;
 	imgOversize.setAttribute('id', 'imgOversize');
 	imgOversize.className = 'image-sizes-active';
-	//Изображение мужское супероверсайз
+	//Изображение супероверсайз
 	let imgSOversize = document.createElement("img");
 	imgSOversize.src = objImage.superoversize_link;
-	imgSOversize.setAttribute('id', 'imgSuperOversize');
-	imgSOversize.className = 'image-sizes-deactive';
-	//Кнопки
-	let butOversize = document.createElement("a");
-	butOversize.className = "but-homepage-allprod";
-	butOversize.setAttribute('id', 'buttonOversize');
-	butOversize.setAttribute('onclick', 'activeImgOversize()');
-	butOversize.innerHTML = "Oversize";
-	let butSOversize = document.createElement("a");
-	butSOversize.className = "but-homepage-allprod";
-	butSOversize.setAttribute('id', 'buttonSuperoversize');
-	butSOversize.setAttribute('onclick', 'activeImgSOversize()');
-	butSOversize.innerHTML = "Super Oversize";
-
-	divman.appendChild(imgOversize);
-	divman.appendChild(imgSOversize);
-	divResultOversize.appendChild(butOversize);
-	divResultOversize.appendChild(butSOversize);
-
-	return divman;
-
-}
-
-function createManImage() {
-
-	let divman = document.createElement('div');
-	let divResultOversize = document.getElementById('result-oversize-calc');
-	divman.className = 'result-div-ragdoll';
-	//Изображение мужское оверсайз
-	let imgOversize = document.createElement("img");
-	imgOversize.src = 'http://santbear.ru/wp-content/uploads/2021/03/futbolka_muzhskaya_oversize_for_site_watermark.png';
-	imgOversize.setAttribute('id', 'imgOversize');
-	imgOversize.className = 'image-sizes-active';
-	//Изображение мужское супероверсайз
-	let imgSOversize = document.createElement("img");
-	imgSOversize.src = 'http://santbear.ru/wp-content/uploads/2021/03/futbolka_muzhskaya_superoversize_for_site_watermark.png';
 	imgSOversize.setAttribute('id', 'imgSuperOversize');
 	imgSOversize.className = 'image-sizes-deactive';
 	//Кнопки
